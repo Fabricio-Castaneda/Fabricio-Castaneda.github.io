@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <body style="font-size: xx-large;">
+        <p>Hola, ingresa un número</p>
+        <label>Número x:</label>
+        <input id="en1" type="number" style="font-size: xx-large;"><br><br>
+        <label>Número y:</label>
+        <input id="en2" type="number" style="font-size: xx-large;"><br><br>
+        <button onclick="suma()" style="font-size: xx-large;">x+y</button>
+        <button onclick="resta1()" style="font-size: xx-large;">x-y</button>
+        <button onclick="resta2()" style="font-size: xx-large;">y-x</button>
+        <button onclick="producto()" style="font-size: xx-large;">x*y</button>
+        <button onclick="division1()" style="font-size: xx-large;">x/y</button>
+        <button onclick="division2()" style="font-size: xx-large;">y/x</button>
+        <button onclick="potencia1()" style="font-size: xx-large;">x**y</button>
+        <button onclick="potencia2()" style="font-size: xx-large;">y**x</button>
+        <button onclick="raiz1()" style="font-size: xx-large;"><img src="sqrt(x).png" width="30px"></button>
+        <button onclick="raiz2()" style="font-size: xx-large;"><img src="sqrt(y).png" width="30px"></button>
+        <p id="demo1"></p>
+
+        <script>
+            function suma(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(x)+Number(y);
+            }
+            function resta1(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(x)-Number(y);
+            }
+            function resta2(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(y)-Number(x);
+            }
+            function producto(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(x)*Number(y);
+            }
+            function division1(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(x)/Number(y);
+            }
+            function division2(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(y)/Number(x);
+            }
+            function potencia1(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(x)**Number(y);
+            }
+            function potencia2(){
+                x = document.getElementById("en1").value;
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Number(y)**Number(x); 
+            }
+            function raiz1(){
+                x = document.getElementById("en1").value;
+                document.getElementById("demo1").innerHTML= Math.sqrt(Number(x));
+            }
+            function raiz2(){
+                y = document.getElementById("en2").value;
+                document.getElementById("demo1").innerHTML= Math.sqrt(Number(y));
+            }
+        </script>
+
+        <a href="https://youtu.be/xvFZjo5PgG0?si=KNhW54iLqjhx_2v4" target="_blank">Enlace a vídeo de Henry Spencer</a>
+    </body>
+</html>
